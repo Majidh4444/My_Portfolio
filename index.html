@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Majidh's</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a02eda61b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/mylogo(1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Protfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>B-Tech Student</p>
+                <h1>Hi, I'm <span>Majidh</span><br> From Andra Pradesh<h1>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="window.open('Majidh_Resume_2nd.pdf', '_blank')">Download
+                    Resume</button>
+                <button class="btn" onclick="visitGithub()">Visit Github</button>
+            </div>
+        </div>
+    </div>
+    <!-------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Majidh, a student at Amrita University. Welcome to my Website, where I showcase my
+                        personal portfolio - a visual record of my journey, featuring projects that highlight my skills
+                        and interests. It's a platform where I share my growth and passion</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++ (Intermediate)</span><br>Problems Solving</li>
+                            <li><span>Web Development (Intermediate)</span><br>Back-End (HTML & CSS)</li>
+                            <li><span>App Development (Basic)</span><br>Back-End (kotlin)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Programming</span><br>Solving Problems on online websites(Interview-Bit) and
+                                completed a small project "Music Player" where I used Data Structure and
+                                Algorithms(Doubly linked List).</li>
+                            <li><span>Web development</span><br>Created a Basic Portofolio at starting and now this one.
+                            </li>
+                            <li><span>App Development</span><br>Working on Back-End part of our one of the project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-Tech</span><br>Amrita Vishwa Vidhyapeetham - Amritapuri</li>
+                            <li><span>Intermediate</span><br>Narayana(Prathiba Campus) - Hyderabad</li>
+                            <li><span>Secondary</span><br> 10th & 9th (Narayana - Tirupatti), 8th & 7th (Kuppam
+                                Public School - Kuppam), 6ht & Before (AVR - Kuppam)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------projects------------------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Music_Player</h2>
+                    <p>This Project is Based on Data Structures and Algorithm. C++ code for music player by
+                        using the knowledge of Data Structures</p>
+                    <!-------------This project focuses on applying Data Structures and Algorithms in C++ to create a functional music player. Data Structures are used to efficiently manage song and playlist data, while Algorithms handle tasks like searching for songs and sorting playlists. The resulting program combines technical expertise with user-friendly features, providing an interactive music playback experience.-->
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>I made a cool website that's like my online resume where I can show off what I'm good at and
+                        also write about stuff I'm into. It's my way of being creative and sharing my experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>This is a real-time project where we are using a app. Myself build app's required backend part.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------portofolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">More...</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>College Fests</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Favourates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Tours</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i><i class="fa-solid fa-paper-plane"></i></i>kmajidh784@gmail.com</p>
+                    <p><i><i class="fa-solid fa-square-phone"></i></i>9381590697</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="pdfs/Majidh_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Majidh. Made with <i class="fa-solid fa-heart"></i> Interest</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpBZKKjG3smgO70K04A-W740ZbI0V859U7B2nIbM7fVP0rONE-XZMPJcBe17Jj83NZHg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['From Andra Pradesh', 'Pursuing B-tech in Amrita University', 'Maintaining Fitness', 'Exploring things'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        function openResume() {
+            // Replace 'path_to_your_resume.pdf' with the actual path to your PDF file
+            window.open('D:\Majidh\prsl\Majidh_Resume_2nd.pdf', '_blank');
+        }
+
+        function visitGithub() {
+            window.open('https://github.com/Majidh4444', '_blank');
+
+        }
+    </script>
+</body>
+
+</html>
