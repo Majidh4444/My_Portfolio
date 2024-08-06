@@ -4,7 +4,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ex
 
 ## Live Site
 
-Visit the live site here: [My Portfolio](https://majidh4444.github.io/My_Portfolio/)
+Visit the live site here: <a href="https://majidh4444.github.io/My_Portfolio/" target="_blank">My Portfolio</a>
 
 ## Features
 
